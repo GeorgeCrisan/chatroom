@@ -25,7 +25,6 @@ app.get('/', (req, res)=>{
 serverio.sockets.on('connection', function(socket){
     console.log( ' user connected ');
     socket.on('message', (msg)=>{
-        console.log(msg);
         serverio.emit('message', msg);
     });
     socket.on('disconnect', function(){
