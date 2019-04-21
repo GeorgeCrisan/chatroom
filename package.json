@@ -1,0 +1,40 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "'socket ip app'",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "node ./public/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeCrisan/chatroom.git"
+  },
+  "author": "George Crisan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeCrisan/chatroom/issues"
+  },
+  "homepage": "https://github.com/GeorgeCrisan/chatroom#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.11",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-middleware": "^3.6.2",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
